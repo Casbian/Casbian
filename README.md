@@ -24,4 +24,3 @@ class Casbian:
         # Indie "Soulslike" Passion Project
 ```
 ## [SoulWoods](https://github.com/Casbian/SoulWoods)
-## ![Casbian](https://i.ibb.co/jZp4GK4/small.png)
