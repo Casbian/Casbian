@@ -1,5 +1,4 @@
-# ![Casbian](https://i.ibb.co/jZp4GK4/small.png)
-## Casbian
+# Casbian
 
 ```python
 class Casbian:
@@ -25,3 +24,4 @@ class Casbian:
         # Indie "Soulslike" Passion Project
 ```
 ## [SoulWoods](https://github.com/Casbian/SoulWoods)
+## ![Casbian](https://i.ibb.co/jZp4GK4/small.png)
