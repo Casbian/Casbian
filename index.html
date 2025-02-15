@@ -4,137 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Casbian's Projects & Creations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      color: #333;
-      background: #fff;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden; 
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-      position: relative;
-    }
-    .avatar {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      margin-bottom: 10px;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    nav ul li {
-      display: inline-block;
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #f9f9f9;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      position: relative;
-      z-index: 10; 
-    }
-    section {
-      margin: 40px 0;
-    }
-    h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-    }
-    .project {
-      margin: 20px 0;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background: #fafafa;
-    }
-    .project h3 {
-      margin-top: 0;
-    }
-    .assets {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .asset {
-      flex: 1 1 200px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 10px;
-      background: #fff;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 40px;
-      position: relative;
-      z-index: 10;
-    }
-    .wave-container {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 120px;
-      overflow: hidden;
-      line-height: 0;
-      z-index: 1;
-    }
-    .wave-container svg {
-      position: relative;
-      display: block;
-      width: 200%;
-      height: 100%;
-      animation: wave-scroll 8s linear infinite;
-    }
-    @keyframes wave-scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    a {
-      color: #0066cc;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; color: #333; background: #fff; position: relative; min-height: 100vh; overflow-x: hidden; line-height: 1.6; }
+    header { background: #333; color: #fff; text-align: center; padding: 2rem 1rem; position: relative; }
+    header h1 { font-weight: 600; letter-spacing: 1px; margin-bottom: 0.5rem; }
+    .avatar { width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 4px solid #fff; margin-bottom: 1rem; }
+    nav ul { list-style: none; padding: 0; margin: 1rem 0 0 0; }
+    nav ul li { display: inline-block; margin: 0 15px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+    nav ul li a:hover { color: #ffd600; }
+    .container { max-width: 1000px; margin: 2rem auto; padding: 2rem; background: #fff9c4; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+    section { margin: 40px 0; }
+    h2 { border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 1rem; font-weight: 600; color: #444; }
+    .project { margin: 20px 0; padding: 20px; border: 1px solid #eee; border-radius: 5px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .project h3 { margin-top: 0; font-weight: 500; }
+    .project ul { margin-left: 1.2rem; }
+    .assets { display: flex; flex-wrap: wrap; gap: 20px; }
+    .asset { flex: 1 1 200px; border: 1px solid #eee; border-radius: 5px; padding: 10px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .asset h4 { margin-top: 0; font-weight: 500; margin-bottom: 0.5rem; }
+    footer { background: #333; color: #fff; text-align: center; padding: 1rem 0; position: relative; z-index: 10; margin-top: 2rem; }
+    footer p { margin: 0.5rem 0; font-weight: 300; }
+    .wave-container { position: absolute; bottom: 0; left: 0; width: 100%; height: 120px; overflow: hidden; line-height: 0; z-index: 1; }
+    .wave-container svg { position: relative; display: block; width: 200%; height: 100%; animation: wave-scroll 8s linear infinite; }
+    @keyframes wave-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    a { color: #0066cc; text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #003399; text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
-    <img 
-      src="https://i.ibb.co/xS9Nzbm0/Coole-Cartoons.jpg" 
-      alt="Casbian's Avatar" 
-      class="avatar" 
-    />
+    <img src="https://example.com/path-to-your-avatar.jpg" alt="Casbian's Avatar" class="avatar" />
     <h1>Welcome to Casbian's Universe</h1>
     <nav>
       <ul>
@@ -142,7 +43,6 @@
         <li><a href="#software">Software Projects</a></li>
         <li><a href="#hardware">Hardware Projects</a></li>
         <li><a href="#assets">Assets</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="https://github.com/Casbian" target="_blank">GitHub</a></li>
       </ul>
     </nav>
@@ -154,8 +54,7 @@
         Hi, I'm Casbian—a developer, digital creator, and hardware enthusiast passionate about coding, game development, and building innovative gadgets.
       </p>
       <p>
-        My work spans a diverse range of projects, from creating robust Python packages and evolving game projects to designing artistic pixel art and dynamic Wallpaper Engine assets.
-        I also enjoy hands-on hardware projects, like revamping vintage tech and building custom Raspberry Pi solutions.
+        My work spans a diverse range of projects, from creating robust Python packages and evolving game projects to designing artistic pixel art and dynamic Wallpaper Engine assets. I also enjoy hands-on hardware projects, like revamping vintage tech and building custom Raspberry Pi solutions.
       </p>
     </section>
     <section id="software">
@@ -163,8 +62,7 @@
       <div class="project">
         <h3>CoreEase</h3>
         <p>
-          <strong>CoreEase</strong> is a powerful Python package designed to automate repetitive tasks and manage threads efficiently.
-          It offers browser automation, file/directory operations, console utilities, and even compiler support for turning Python scripts into executables.
+          <strong>CoreEase</strong> is a powerful Python package designed to automate repetitive tasks and manage threads efficiently. It offers browser automation, file/directory operations, console utilities, and even compiler support for turning Python scripts into executables.
         </p>
         <ul>
           <li>Thread management with animated load buffers</li>
@@ -180,8 +78,7 @@
       <div class="project">
         <h3>SoulWoods</h3>
         <p>
-          <strong>SoulWoods</strong> is an evolving game project built with Python's <em>tkinter</em> and <em>customtkinter</em>.
-          It features interactive story screens, dynamic combat with animated characters, and upgrade mechanics driven by custom game logic.
+          <strong>SoulWoods</strong> is an evolving game project built with Python's <em>tkinter</em> and <em>customtkinter</em>. It features interactive story screens, dynamic combat with animated characters, and upgrade mechanics driven by custom game logic.
         </p>
         <p>
           The project includes modules such as <code>Monster.py</code>, <code>Player.py</code>, <code>Upgrade.py</code>, and a main game loop in <code>v2.0.py</code>.
@@ -196,8 +93,7 @@
       <div class="project">
         <h3>Custom Jukebox Revamp</h3>
         <p>
-          I transformed a vintage jukebox by integrating modern features such as a touchscreen interface, updated music boxes, and a powerful subwoofer.
-          This project blends retro aesthetics with contemporary technology.
+          I transformed a vintage jukebox by integrating modern features such as a touchscreen interface, updated music boxes, and a powerful subwoofer. This project blends retro aesthetics with contemporary technology.
         </p>
       </div>
       <div class="project">
@@ -206,17 +102,16 @@
           I actively build custom Raspberry Pi solutions, including:
         </p>
         <ul>
-          <li><strong>Pi-hole:</strong> A network-wide ad blocker.</li>
-          <li><strong>PiNAS:</strong> A DIY network-attached storage system.</li>
-          <li>Other home automation and DIY projects.</li>
+          <li><strong>Pi-hole:</strong> A network-wide ad blocker</li>
+          <li><strong>PiNAS:</strong> A DIY network-attached storage system</li>
+          <li>Other home automation and DIY projects</li>
         </ul>
       </div>
     </section>
     <section id="assets">
       <h2>Pixel Art & Wallpaper Engine Assets</h2>
       <p>
-        Alongside my coding and hardware projects, I also create artistic assets.
-        I design simple, hand-crafted pixel art and custom backgrounds using Wallpaper Engine, adding a unique visual flair to my digital creations.
+        Alongside my coding and hardware projects, I also create artistic assets. I design simple, hand-crafted pixel art and custom backgrounds using Wallpaper Engine, adding a unique visual flair to my digital creations.
       </p>
       <div class="assets">
         <div class="asset">
@@ -235,7 +130,7 @@
   </footer>
   <div class="wave-container">
     <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M0,40 C150,80 350,0 600,40 C850,80 1050,0 1200,40 L1200,120 L0,120 Z" fill="#222" />
+      <path d="M0,40 C150,80 350,0 600,40 C850,80 1050,0 1200,40 L1200,120 L0,120 Z" fill="#333" />
     </svg>
   </div>
 </body>
