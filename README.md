@@ -23,6 +23,5 @@ class Casbian:
         self.SoulWoods = self.InWork
         # Indie "Soulslike" Passion Project
 ```
-###Certifications
 ![SAP](https://i.ibb.co/G33B9SWX/Screenshot-2025-02-15-at-23-58-50-Kai-SAP-CERT-pdf.png)
 ![PSMI](https://i.ibb.co/ySsR2Dn/PSMI.png)
