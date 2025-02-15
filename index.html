@@ -5,18 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Casbian's Projects & Creations</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      background: #f4f4f4;
       color: #333;
+      background: #fff;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden; 
     }
     header {
       background: #222;
       color: #fff;
       padding: 1rem 0;
       text-align: center;
+      position: relative;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 10px;
     }
     nav ul {
       list-style: none;
@@ -36,8 +51,10 @@
       max-width: 1000px;
       margin: 20px auto;
       padding: 20px;
-      background: #fff;
+      background: #f9f9f9;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 10; 
     }
     section {
       margin: 40px 0;
@@ -74,7 +91,35 @@
       text-align: center;
       padding: 1rem 0;
       margin-top: 40px;
+      position: relative;
+      z-index: 10;
     }
+    .wave-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      overflow: hidden;
+      line-height: 0;
+      z-index: 1;
+    }
+    .wave-container svg {
+      position: relative;
+      display: block;
+      width: 200%;
+      height: 100%;
+      animation: wave-scroll 8s linear infinite;
+    }
+    @keyframes wave-scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
     a {
       color: #0066cc;
     }
@@ -85,6 +130,11 @@
 </head>
 <body>
   <header>
+    <img 
+      src="https://i.ibb.co/xS9Nzbm0/Coole-Cartoons.jpg" 
+      alt="Casbian's Avatar" 
+      class="avatar" 
+    />
     <h1>Welcome to Casbian's Universe</h1>
     <nav>
       <ul>
@@ -97,9 +147,7 @@
       </ul>
     </nav>
   </header>
-
   <div class="container">
-    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <p>
@@ -110,8 +158,6 @@
         I also enjoy hands-on hardware projects, like revamping vintage tech and building custom Raspberry Pi solutions.
       </p>
     </section>
-
-    <!-- Software Projects Section -->
     <section id="software">
       <h2>Software Projects</h2>
       <div class="project">
@@ -145,8 +191,6 @@
         </p>
       </div>
     </section>
-
-    <!-- Hardware Projects Section -->
     <section id="hardware">
       <h2>Hardware Projects</h2>
       <div class="project">
@@ -168,8 +212,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- Assets Section -->
     <section id="assets">
       <h2>Pixel Art & Wallpaper Engine Assets</h2>
       <p>
@@ -187,20 +229,14 @@
         </div>
       </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        I'm always open to new ideas, collaborations, or a chat about coding, hardware, and art.
-        Connect with me on <a href="https://github.com/Casbian" target="_blank">GitHub</a> or email me at 
-        <a href="mailto:youremail@example.com">youremail@example.com</a> (replace with your actual email).
-      </p>
-    </section>
   </div>
-
   <footer>
     <p>&copy; 2025 Casbian. All Rights Reserved.</p>
   </footer>
+  <div class="wave-container">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,40 C150,80 350,0 600,40 C850,80 1050,0 1200,40 L1200,120 L0,120 Z" fill="#222" />
+    </svg>
+  </div>
 </body>
 </html>
