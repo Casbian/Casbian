@@ -1,11 +1,8 @@
 # Casbian
-
 ##Certifications
 SAP UC_FL_S42022 //
-SCRUM PSM I
-
+SCRUM PSM I //
 [PSM I](https://i.ibb.co/ySsR2Dn/PSMI.png)
-
 ##Motivations 
 ```python
 class Casbian:
@@ -30,6 +27,3 @@ class Casbian:
         self.SoulWoods = self.InWork
         # Indie "Soulslike" Passion Project
 ```
-### [SoulWoods](https://github.com/Casbian/SoulWoods)
-
-
